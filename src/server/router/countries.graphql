@@ -1,0 +1,7 @@
+query Test($code: String!) {
+  countries(filter: { code: { eq: $code } }) {
+    currency
+    name
+    emoji
+  }
+}
